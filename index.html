@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>findThePrecious.com</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
@@ -10,9 +11,29 @@
   <body>
     <div class="container-fluid">
       <!-- nav  -->
+
         <div class="row bg-dark align-items-center ml-0 mr-0">
             <H3 class="col-4 text-white">findThePrecious.com</H3>
-            <nav class="nav nav-pills col-8 ">
+
+            <!--  menu en burgeur pour petit ecran -->
+            <div class="dropdown offset-6 col-1 dropleft d-lg-none d-md-block">
+              <button class="btn btn-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#fff" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                </svg>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">The Ring</a>
+                <a class="dropdown-item" href="#">Get my reward</a>
+                <a class="dropdown-item" href="#">Best hunters</a>
+                <a class="dropdown-item" href="#">Join the army</a>
+                <a class="dropdown-item" href="#">Contact us</a>
+              </div>
+            </div>
+
+            <!--  menu en burgeur pour petit ecran END -->
+
+
+            <nav class="nav nav-pills col-8 d-md-none d-lg-block">
               <ul class="nav">
                 <li class="nav-items"><a class="nav-link active text-dark bg-light rounded-0" href="#">Fellows</a></li>
                 <li class="nav-items"><a class="nav-link text-white" href="#">The Ring</a></li>
@@ -84,7 +105,7 @@
         <!-- Cards -->
         <div class="row justify-content-center mt-3">
 
-          <div id="card1" class="card col-3 mr-2" >
+          <div id="card1" class="card col-lg-3 col-md-6  col-6  mr-2" >
               <img id="photo1" class="card-img-top "  src="http://images.innoveduc.fr/integration_gandalf.png" alt="">
             <div class="card-body">
               <h5 class="card-title">The Wizard</h5>
@@ -94,7 +115,7 @@
             </div>
           </div>
 
-          <div id="card2" class="card col-3 mr-2">
+          <div id="card2" class="card col-lg-3 col-md-6  col-6 mr-2">
             <img id="photo2" class="card-img-top" src="http://images.innoveduc.fr/integration_gandalf.png" alt="">
             <div class="card-body">
               <h5 class="card-title">Hobbit #3</h5>
@@ -103,7 +124,7 @@
             </div>
           </div>
 
-          <div id="card3" class="card col-3 mr-2 ">
+          <div id="card3" class="card col-lg-3 col-md-6 col-6 mr-2 ">
             <img id="photo3" class="card-img-top" src="http://images.innoveduc.fr/integration_gandalf.png" alt="">
             <div class="card-body">
               <h5 class="card-title">Yummy Dwarf</h5>
@@ -123,7 +144,7 @@
         <div class="row ml-1">
           <h1 class="col-8">I have captured one of them, how to get my reward ?</h1>
           <p class="col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Aliquam egestas, velit at condimentum placerat, sem sapien laoreet mauris, dictum porttitor lacus est nec enim. Vivamus feugiat elit lorem, eu porttitor ante ultrices id. Phasellus suscipit tellus ante, nec dignissim elit imperdiet nec. Nullam fringilla feugiat nisl. Ut pretium, metus venenatis dictum viverra, dui metus finibus enim, ac rhoncus sem lorem vitae mauris. Suspendisse ut venenatis libero. Suspendisse lorem felis, pretium in maximus id, tempor non ipsum</p>
-          <img class="col-2" src="http://via.placeholder.com/140x140" alt="">
+          <img class="col-2 " src="http://via.placeholder.com/140x140" height="100%" alt="">
         </div>
           <button type="button" class="offset-6 col-2 btn btn-outline-secondary">Contact us</button>
         <hr>
@@ -204,7 +225,8 @@
           <div class="card-body">
             <h5 class="card-title">Special title treatment</h5>
             <div class="row">
-              <p class="card-text col-8">My preciooooooussssss ! Hrk Hrk, we want our preeciooooouuusssss !!<img class="offset-2 col-2 rounded-circle" src="http://via.placeholder.com/110x110" alt=""></p>
+              <p class="card-text ">My preciooooooussssss ! Hrk Hrk, we want our preeciooooouuusssss !!
+              <img class=" rounded-circle" src="http://via.placeholder.com/110x110"alt=""></p>
             </div>
           </div>
         </div>
@@ -218,7 +240,7 @@
     <section>
       <div class="row">
         <h1 class="col-12">Join Mordor Army, we need you !</h1>
-        <img class="offset-1 col-1" src="http://via.placeholder.com/110x110" alt="">
+        <img class="offset-1 col-1 pt-4" src="http://via.placeholder.com/110x110" height="100%" alt="">
         <p class="col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat. Aliquam egestas, velit at condimentum placerat, sem sapien laoreet mauris, dictum porttitor lacus est nec enim. Vivamus feugiat elit lorem, eu porttitor ante ultrices id. Phasellus suscipit tellus ante, nec dignissim elit imperdiet nec. Nullam fringilla feugiat nisl. Ut pretium, metus venenatis dictum viverra, dui metus finibus enim, ac rhoncus sem lorem vitae mauris. Suspendisse ut venenatis libero. Suspendisse lorem felis, pretium in maximus id, tempor non ipsum</p>
         <button type="button" class="btn btn-outline-dark offset-6 col-2 ">More info </button>
       </div>
