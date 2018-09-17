@@ -1,8 +1,107 @@
+/* Ajout fonts perso */
+
+/* fonts titres */
+@font-face {
+  font-family: "Aniron";
+  src: url("fonts/Aniron/anirm___.ttf");
+}
+
+/* fonts Symbols titres */
+
+@font-face {
+  font-family: "Tengwar";
+  src: url("fonts/tengwar/tngan.ttf");
+}
+
+/* fonts texte  */
+
+@font-face {
+  font-family: "nancy-lorenz";
+  src: url("fonts/nancy-lorenz/partybusiness.ttf");
+}
+
+.fontsTitre {
+  font-family: "Aniron", serif;
+}
+
+.fontsSymbolsTitre  {
+  font-family: "Tengwar", serif;
+  color: orange;
+
+}
+
+.fontsTexte {
+  font-family: "nancy-lorenz", serif;
+
+}
+
+/* fin ajout fonts */
+
+/* texte orange */
+
+.textOrange {
+  color: orange;
+}
+
+/* texte orange */
+
+/* background page */
+
+body {
+  background-image: url("img/bg_light.png");
+}
+
+/* background page FIN */
+
+/* background orange  */
+
+.bg-orange {
+  background-color: #FF4B09;
+}
+
+/* background orange  FIN */
+
+/* carrousel */
+
+.carousel-item {
+    max-height: 700px;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* carrousel FIN */
+
+/* nav-pills */
+
+.underlineOrange:hover {
+
+  text-decoration: underline #FF4C00;
+}
+
+
+/* nav-pills */
 
 /* taille des ecriture des hover  */
+
 .taille {
-  font-size: 1em;
+  font-size: 2em;
 }
+
+.tailleNom {
+  font-size: 2.5em;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* taille des ecriture des hover  FIN */
+
 
 /* hover carte 1 */
 #photo1 {
@@ -15,6 +114,15 @@
 
 #card1:hover #photo1 {
   opacity: 1;
+}
+
+#card1:hover #gandalf {
+  font-size: 2em;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 0.5s;
 }
 
 /* hover carte 1 END */
@@ -32,6 +140,18 @@
   opacity: 1;
 }
 
+
+#card2:hover #gimli {
+  text-decoration-line: line-through;
+  text-decoration-color: #FE661D;
+  font-size: 6em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 0.5s;
+}
+
 /* hover carte 2 END */
 
 /* hover carte 3 */
@@ -45,6 +165,15 @@
 
 #card3:hover #photo3 {
   opacity: 1;
+}
+
+#card3:hover #aragord {
+  font-size: 3.5em;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 0.5s;
 }
 
 /* hover carte 2 END */
