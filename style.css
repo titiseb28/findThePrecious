@@ -26,7 +26,7 @@
 
 .fontsSymbolsTitre  {
   font-family: "Tengwar", serif;
-  color: orange;
+  color: #FF4C00;
 
 }
 
@@ -37,10 +37,12 @@
 
 /* fin ajout fonts */
 
+
+
 /* texte orange */
 
 .textOrange {
-  color: orange;
+  color: #fe661d;
 }
 
 /* texte orange */
@@ -56,7 +58,7 @@ body {
 /* background orange  */
 
 .bg-orange {
-  background-color: #FF4B09;
+  background-color: #fe661d;
 }
 
 /* background orange  FIN */
@@ -64,7 +66,7 @@ body {
 /* carrousel */
 
 .carousel-item {
-    max-height: 700px;
+    max-height: 500px;
 }
 
 .carousel-caption{
@@ -80,7 +82,7 @@ body {
 
 .underlineOrange:hover {
 
-  text-decoration: underline #FF4C00;
+  text-decoration: underline #fe661d;
 }
 
 
@@ -93,7 +95,7 @@ body {
 }
 
 .tailleNom {
-  font-size: 2.5em;
+  font-size: 1em;
   position: absolute;
   top: 70%;
   left: 50%;
@@ -177,3 +179,10 @@ body {
 }
 
 /* hover carte 2 END */
+
+
+/* fond card about the rings */
+
+.fondCards {
+  background-color: #CDCACA;
+}
